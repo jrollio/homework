@@ -1,3 +1,14 @@
+body {
+    font-family: monospace;
+    font-size: xxx-large;
+    text-align: center;
+    /* align-content: center; */
+}
+# {
+        display: table-cell;
+    vertical-align: middle;
+
+}
 .sa-box {
     /* display: block; */
     width: 200px;
@@ -43,6 +54,8 @@
     border: 2px solid red;
     left: 200px;
     position: relative;
+    display: table-cell;
+    vertical-align: middle;
     margin: 2px;
 
 }
@@ -150,15 +163,22 @@
 #box-16 {
     /* display: block; */
     /* display: inline-block; */
-    position: relative;
+    /* position: unset; */
+    font-size: 80%;
+    content: "content"
     left: 200px;
     /* top: -200px; */
-    background-color: #ffee2d;
-    width: 200px;
-    height: 200px;
+    background-color: wheat;
+    width: 45%;
+    height: 40%;
+    /* height: 90%; */
     border: 2px solid red;
     margin: 2px;
+    display:initial;
 }
+
+#box-16:hover::before{ content: "box-16-b4 "; left: 400px; position:relative;
+                     background-color: inherit; display:unset;}
 
 .line-01 {
     border: 2px solid blueviolet;
